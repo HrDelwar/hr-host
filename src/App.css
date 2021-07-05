@@ -1,38 +1,62 @@
-.App {
-  text-align: center;
+.animate__animated.animate__delay-6s {
+  -webkit-animation-delay: calc(1s * 6);
+  animation-delay: calc(1s * 6);
+  -webkit-animation-delay: calc(var(--animate-delay) * 6);
+  animation-delay: calc(var(--animate-delay) * 6);
+}
+.animate__animated.animate__delay-8s {
+  -webkit-animation-delay: calc(1s * 8);
+  animation-delay: calc(1s * 8);
+  -webkit-animation-delay: calc(var(--animate-delay) * 8);
+  animation-delay: calc(var(--animate-delay) * 8);
+}
+.animate__animated.animate__delay-10s {
+  -webkit-animation-delay: calc(1s * 10);
+  animation-delay: calc(1s * 10);
+  -webkit-animation-delay: calc(var(--animate-delay) * 10);
+  animation-delay: calc(var(--animate-delay) * 10);
+}
+.animate__animated.animate__delay-12s {
+  -webkit-animation-delay: calc(1s * 12);
+  animation-delay: calc(1s * 12);
+  -webkit-animation-delay: calc(var(--animate-delay) * 12);
+  animation-delay: calc(var(--animate-delay) * 12);
+}
+.animate__animated.animate__delay-14s {
+  -webkit-animation-delay: calc(1s * 14);
+  animation-delay: calc(1s * 14);
+  -webkit-animation-delay: calc(var(--animate-delay) * 14);
+  animation-delay: calc(var(--animate-delay) * 14);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.custom__animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-duration: var(--animate-duration);
+  animation-duration: var(--animate-duration);
+}
+.footer-title {
+  @apply text-xl text-white font-medium mb-5 mt-2;
+}
+.footer-des {
+  @apply text-white hover:text-blue-600 block leading-7 cursor-pointer;
+}
+.error-input {
+  @apply border-red-500 focus:border-red-500 focus:ring-red-500;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.focus-input {
+  @apply focus:ring-indigo-500 focus:border-indigo-500 border-gray-500;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.form-input {
+  @apply mt-1 block w-full  sm:text-sm border p-2 focus:outline-none  rounded-md;
 }
-
-.App-link {
-  color: #61dafb;
+.form-label {
+  @apply block text-xl font-medium text-white;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn{
+  @apply lg:ml-2 font-bold text-lg w-full no-underline text-center lg:w-auto lg:px-4 py-2 bg-gradient-to-r hover:bg-gradient-to-l rounded-lg  from-purple-600 to-pink-500;
+}
+*{
+  scroll-behavior: smooth;
 }
